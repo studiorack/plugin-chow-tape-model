@@ -10,8 +10,10 @@ rm -Rf Bin/*Mac*
 
 # set up build VST
 VST_PATH=~/Developer/VST2_SDK/
+AAX_PATH=~/Developer/AAX_SDK_2p3p2/
 sed -i '' "56s~.*~juce_set_vst2_sdk_path(${VST_PATH})~" CMakeLists.txt
-sed -i '' '63s/#//' CMakeLists.txt
+sed -i '' "57s~.*~juce_set_aax_sdk_path(${AAX_PATH})~" CMakeLists.txt
+sed -i '' '64s/#//' CMakeLists.txt
 
 # cmake new builds
 TEAM_ID=$(more ~/Developer/mac_id)
@@ -19,7 +21,7 @@ cmake -Bbuild -GXcode -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY="Apple Distribu
     -DCMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM=$TEAM_ID \
     -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGN_STYLE="Manual" \
     -D"CMAKE_OSX_ARCHITECTURES=arm64;x86_64"
-cmake --build build --config Release -j8 | xcpretty
+cmake --build build --config Release -j12 | xcpretty
 
 # copy builds to Bin
 mkdir -p Bin/Mac
@@ -29,6 +31,7 @@ for plugin in "${plugins[@]}"; do
     cp -R build/${plugin}_artefacts/Release/VST/${plugin}.vst Bin/Mac/${plugin}.vst
     cp -R build/${plugin}_artefacts/Release/VST3/${plugin}.vst3 Bin/Mac/${plugin}.vst3
     cp -R build/${plugin}_artefacts/Release/AU/${plugin}.component Bin/Mac/${plugin}.component
+    cp -R build/${plugin}_artefacts/Release/AAX/${plugin}.aaxplugin Bin/Mac/${plugin}.aaxplugin
 done
 
 # reset CMakeLists.txt

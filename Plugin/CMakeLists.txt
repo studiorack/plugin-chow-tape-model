@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.12" CACHE STRING "Minimum OS X deployment target")
 set(CMAKE_CXX_STANDARD 17)
-project(CHOWTapeModel VERSION 2.7.0)
+project(CHOWTapeModel VERSION 2.7.1)
 
 # set up JUCE and modules
 add_subdirectory(Juce)
@@ -54,15 +54,17 @@ set_target_properties(juce_plugin_modules PROPERTIES
 
 # set up plugin project
 # juce_set_vst2_sdk_path(C:/SDKs/VST_SDK/VST2_SDK/)
+# juce_set_aax_sdk_path(/Users/jachowdhury/Developer/AAX_SDK_2p3p2/)
 # include_directories(C:/SDKs/asiosdk2.3/common)
 
 juce_add_plugin(CHOWTapeModel
     COMPANY_NAME chowdsp
     PLUGIN_MANUFACTURER_CODE Chow
     PLUGIN_CODE Jdox
-    FORMATS AU VST3 Standalone LV2 #VST
+    FORMATS AU VST3 Standalone LV2 #AAX VST
     ProductName "CHOWTapeModel"
     LV2_URI https://github.com/jatinchowdhury18/AnalogTapeModel
+    ICON_BIG logo.png
 )
 
 # create JUCE header
