@@ -189,6 +189,69 @@
       <FILE id="JDgaoP" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
     </GROUP>
+    <GROUP id="{1EF4B975-9B42-F40A-6AC8-406B32CB1AFC}" name="RTNeural">
+      <GROUP id="{367022F6-0EC1-FA97-D939-44416E4F6189}" name="activation">
+        <FILE id="yYydom" name="activation.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/activation/activation.h"/>
+        <FILE id="Z8N9qM" name="activation_accelerate.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/activation/activation_accelerate.h"/>
+        <FILE id="qD4Uf0" name="activation_eigen.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/activation/activation_eigen.h"/>
+        <FILE id="aJBz4e" name="activation_xsimd.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/activation/activation_xsimd.h"/>
+      </GROUP>
+      <GROUP id="{6CD433C3-F3D0-5269-0BD2-8524C8CFB52B}" name="conv1d">
+        <FILE id="zxw6Bu" name="conv1d.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/conv1d/conv1d.h"/>
+        <FILE id="sl9Tvf" name="conv1d.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/conv1d/conv1d.tpp"/>
+        <FILE id="s49ZSM" name="conv1d_accelerate.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/conv1d/conv1d_accelerate.h"/>
+        <FILE id="KLAPwl" name="conv1d_accelerate.tpp" compile="0" resource="1"
+              file="modules/RTNeural/RTNeural/conv1d/conv1d_accelerate.tpp"/>
+        <FILE id="sRKiTz" name="conv1d_eigen.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/conv1d/conv1d_eigen.h"/>
+        <FILE id="Bl6iCQ" name="conv1d_eigen.tpp" compile="0" resource="1"
+              file="modules/RTNeural/RTNeural/conv1d/conv1d_eigen.tpp"/>
+        <FILE id="KNzR79" name="conv1d_xsimd.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/conv1d/conv1d_xsimd.h"/>
+        <FILE id="R5Vose" name="conv1d_xsimd.tpp" compile="0" resource="1"
+              file="modules/RTNeural/RTNeural/conv1d/conv1d_xsimd.tpp"/>
+      </GROUP>
+      <GROUP id="{1F17CB7A-EF48-C7DC-A2C4-E86D8499A92C}" name="dense">
+        <FILE id="g2zUfs" name="dense.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/dense/dense.h"/>
+        <FILE id="er3ZR0" name="dense_accelerate.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/dense/dense_accelerate.h"/>
+        <FILE id="vWDs4f" name="dense_eigen.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/dense/dense_eigen.h"/>
+        <FILE id="f3mvwz" name="dense_xsimd.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/dense/dense_xsimd.h"/>
+      </GROUP>
+      <GROUP id="{0E6F10C3-3AB1-A7CE-34DF-739A6FAE7592}" name="gru">
+        <FILE id="cAnpFZ" name="gru.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/gru/gru.h"/>
+        <FILE id="QCYuMa" name="gru.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/gru/gru.tpp"/>
+        <FILE id="C9FlDC" name="gru_accelerate.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/gru/gru_accelerate.h"/>
+        <FILE id="pCgEQn" name="gru_accelerate.tpp" compile="0" resource="1"
+              file="modules/RTNeural/RTNeural/gru/gru_accelerate.tpp"/>
+        <FILE id="lyEa62" name="gru_eigen.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/gru/gru_eigen.h"/>
+        <FILE id="hQSp9t" name="gru_eigen.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/gru/gru_eigen.tpp"/>
+        <FILE id="VU93xQ" name="gru_xsimd.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/gru/gru_xsimd.h"/>
+        <FILE id="g7HaEF" name="gru_xsimd.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/gru/gru_xsimd.tpp"/>
+      </GROUP>
+      <GROUP id="{D26AE96B-A107-49C3-F149-29BF9CAD7175}" name="lstm">
+        <FILE id="YYCPCW" name="lstm.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/lstm/lstm.h"/>
+        <FILE id="AVNPx7" name="lstm.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/lstm/lstm.tpp"/>
+        <FILE id="YZYlaZ" name="lstm_accelerate.h" compile="0" resource="0"
+              file="modules/RTNeural/RTNeural/lstm/lstm_accelerate.h"/>
+        <FILE id="kaK88o" name="lstm_accelerate.tpp" compile="0" resource="1"
+              file="modules/RTNeural/RTNeural/lstm/lstm_accelerate.tpp"/>
+        <FILE id="EaeiaB" name="lstm_eigen.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/lstm/lstm_eigen.h"/>
+        <FILE id="U2zFu3" name="lstm_eigen.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/lstm/lstm_eigen.tpp"/>
+        <FILE id="xv1Wt8" name="lstm_xsimd.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/lstm/lstm_xsimd.h"/>
+        <FILE id="PjfZur" name="lstm_xsimd.tpp" compile="0" resource="1" file="modules/RTNeural/RTNeural/lstm/lstm_xsimd.tpp"/>
+      </GROUP>
+      <FILE id="ggmYNk" name="CMakeLists.txt" compile="0" resource="1" file="modules/RTNeural/RTNeural/CMakeLists.txt"/>
+      <FILE id="YL2dul" name="common.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/common.h"/>
+      <FILE id="BtD6Vd" name="Layer.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/Layer.h"/>
+      <FILE id="Rbf9jZ" name="Model.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/Model.h"/>
+      <FILE id="NVfsKg" name="model_loader.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/model_loader.h"/>
+      <FILE id="EDD99J" name="RTNeural.cpp" compile="1" resource="0" file="modules/RTNeural/RTNeural/RTNeural.cpp"/>
+      <FILE id="j8F7sH" name="RTNeural.h" compile="0" resource="0" file="modules/RTNeural/RTNeural/RTNeural.h"/>
+    </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="IyqPqM" bigIcon="IyqPqM">
@@ -200,7 +263,7 @@
         <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_devices" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_formats" path="modules/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="modules/DISTRHO-JUCE/modules"/>
         <MODULEPATH id="juce_audio_processors" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_utils" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_core" path="modules/JUCE/modules"/>
@@ -226,7 +289,7 @@
         <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_devices" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_formats" path="modules/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="modules/DISTRHO-JUCE/modules"/>
         <MODULEPATH id="juce_audio_processors" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_audio_utils" path="modules/JUCE/modules"/>
         <MODULEPATH id="juce_core" path="modules/JUCE/modules"/>
