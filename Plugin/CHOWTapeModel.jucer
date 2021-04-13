@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="jDoXPz" name="CHOWTapeModel" projectType="audioplug" version="2.7.4"
+<JUCERPROJECT id="jDoXPz" name="CHOWTapeModel" projectType="audioplug" version="2.7.6"
               pluginFormats="buildAU,buildStandalone,buildVST3" cppLanguageStandard="17"
               companyName="chowdsp" companyEmail="chowdsp@gmail.com" pluginManufacturerCode="Chow"
               reportAppUsage="0" jucerFormatVersion="1" headerPath="../../modules/RTNeural&#10;../../modules/RTNeural/modules/json">
@@ -21,22 +21,32 @@
           <FILE id="bQP3yl" name="RobotoCondensed-Regular.ttf" compile="0" resource="1"
                 file="Source/GUI/Assets/RobotoCondensed-Regular.ttf"/>
         </GROUP>
+        <GROUP id="{77A37A76-DA24-D369-887F-DDC42A1A66F1}" name="OnOff">
+          <FILE id="OHGzUr" name="OnOffManager.cpp" compile="1" resource="0"
+                file="Source/GUI/OnOff/OnOffManager.cpp"/>
+          <FILE id="l5mTWA" name="OnOffManager.h" compile="0" resource="0" file="Source/GUI/OnOff/OnOffManager.h"/>
+          <FILE id="jludXs" name="PowerButton.cpp" compile="1" resource="0" file="Source/GUI/OnOff/PowerButton.cpp"/>
+          <FILE id="KYhIfH" name="PowerButton.h" compile="0" resource="0" file="Source/GUI/OnOff/PowerButton.h"/>
+        </GROUP>
+        <GROUP id="{4E6D8378-15C8-79E6-1258-6FF3D6EE4DFC}" name="Visualizers">
+          <FILE id="hrLZma" name="LightMeter.cpp" compile="1" resource="0" file="Source/GUI/Visualizers/LightMeter.cpp"/>
+          <FILE id="RBMmE6" name="LightMeter.h" compile="0" resource="0" file="Source/GUI/Visualizers/LightMeter.h"/>
+          <FILE id="ruBB24" name="MixGroupViz.cpp" compile="1" resource="0" file="Source/GUI/Visualizers/MixGroupViz.cpp"/>
+          <FILE id="Z39d6E" name="MixGroupViz.h" compile="0" resource="0" file="Source/GUI/Visualizers/MixGroupViz.h"/>
+          <FILE id="QTfPFJ" name="TapeScope.cpp" compile="1" resource="0" file="Source/GUI/Visualizers/TapeScope.cpp"/>
+          <FILE id="hiolZj" name="TapeScope.h" compile="0" resource="0" file="Source/GUI/Visualizers/TapeScope.h"/>
+        </GROUP>
         <FILE id="XNEbSl" name="AutoUpdating.cpp" compile="1" resource="0"
               file="Source/GUI/AutoUpdating.cpp"/>
         <FILE id="u8IfBD" name="AutoUpdating.h" compile="0" resource="0" file="Source/GUI/AutoUpdating.h"/>
-        <FILE id="AG1VNL" name="LightMeter.cpp" compile="1" resource="0" file="Source/GUI/LightMeter.cpp"/>
-        <FILE id="F1yjo4" name="LightMeter.h" compile="0" resource="0" file="Source/GUI/LightMeter.h"/>
-        <FILE id="SYzWcj" name="MixGroupViz.cpp" compile="1" resource="0" file="Source/GUI/MixGroupViz.cpp"/>
-        <FILE id="YzAgWK" name="MixGroupViz.h" compile="0" resource="0" file="Source/GUI/MixGroupViz.h"/>
+        <FILE id="o4lQOs" name="DragToScrollListener.cpp" compile="1" resource="0"
+              file="Source/GUI/DragToScrollListener.cpp"/>
+        <FILE id="OyLj6h" name="DragToScrollListener.h" compile="0" resource="0"
+              file="Source/GUI/DragToScrollListener.h"/>
         <FILE id="IgOtsG" name="MyLNF.cpp" compile="1" resource="0" file="Source/GUI/MyLNF.cpp"/>
         <FILE id="pj6eEc" name="MyLNF.h" compile="0" resource="0" file="Source/GUI/MyLNF.h"/>
-        <FILE id="jFuKe3" name="OnOffManager.cpp" compile="1" resource="0"
-              file="Source/GUI/OnOffManager.cpp"/>
-        <FILE id="yLv4BP" name="OnOffManager.h" compile="0" resource="0" file="Source/GUI/OnOffManager.h"/>
-        <FILE id="dOs7G8" name="PowerButton.cpp" compile="1" resource="0" file="Source/GUI/PowerButton.cpp"/>
-        <FILE id="tNdX49" name="PowerButton.h" compile="0" resource="0" file="Source/GUI/PowerButton.h"/>
-        <FILE id="yy3bQ7" name="TapeScope.cpp" compile="1" resource="0" file="Source/GUI/TapeScope.cpp"/>
-        <FILE id="zDg8Lf" name="TapeScope.h" compile="0" resource="0" file="Source/GUI/TapeScope.h"/>
+        <FILE id="zBp0Vf" name="ScrollView.cpp" compile="1" resource="0" file="Source/GUI/ScrollView.cpp"/>
+        <FILE id="ObpEUk" name="ScrollView.h" compile="0" resource="0" file="Source/GUI/ScrollView.h"/>
         <FILE id="WfCYvA" name="TitleComp.cpp" compile="1" resource="0" file="Source/GUI/TitleComp.cpp"/>
         <FILE id="aoz8GN" name="TitleComp.h" compile="0" resource="0" file="Source/GUI/TitleComp.h"/>
         <FILE id="oFI05X" name="TooltipComp.cpp" compile="1" resource="0" file="Source/GUI/TooltipComp.cpp"/>
@@ -254,10 +264,11 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="IyqPqM" bigIcon="IyqPqM">
+    <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="IyqPqM" bigIcon="IyqPqM"
+               iosDevelopmentTeamID="46MK76T24B">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug"/>
-        <CONFIGURATION isDebug="0" name="Release"/>
+        <CONFIGURATION isDebug="0" name="Release" osxCompatibility="10.8 SDK"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
